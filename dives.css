@@ -1,0 +1,139 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        section {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+        }
+        
+        .father {
+            width: 100%;
+            padding-top: 15%;
+        }
+        
+        .skill-bar {
+            background-color: white;
+            width: 50%;
+            margin: 0% auto;
+            border-radius: 10px;
+            padding: 25px 30px;
+            box-shadow: -0px -0px 70px 6px rgb(131, 131, 131);
+        }
+        
+        .skill-bar .bar {
+            margin: 20px 0px;
+        }
+        
+        .skill-bar .bar :first-child {
+            margin: 0px;
+        }
+        
+        .skill-bar .bar .info span {
+            font-size: 17px;
+            width: 500;
+        }
+        
+        .skill-bar .bar .info {
+            margin-bottom: 5px;
+        }
+        
+        .skill-bar .bar .progess-bar {
+            border-radius: 10px;
+            position: relative;
+            height: 10px;
+            width: 100%;
+            background-color: whitesmoke;
+            box-shadow: inset -0px -0px 10px rgb(0, 0, 0, 0.2);
+        }
+        
+        .skill-bar .progess-bar span {
+            height: 10px;
+            width: 80%;
+            background: #6665ee;
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin: left;
+            border-radius: 10px;
+            animation: imran 1s cubic-bezier(1, 0, 0.1, 1) forwards;
+        }
+        
+        .bar .progess-bar span {
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: imran 2s 1.8s cubic-bezier(1, 0, 0.1, 1) forwards;
+        }
+        
+        @keyframes imran {
+            100% {
+                transform: scaleX(1);
+            }
+        }
+        
+        .skill-bar .progess-bar span::before {
+            position: absolute;
+            content: "";
+            right: 0%;
+            top: -10px;
+            width: 0%;
+            height: 0%;
+            border: 7px solid transparent;
+            border-right-width: 0px;
+            border-bottom-width: 0px;
+            border-top-color: #000;
+        }
+        
+        .skill-bar .progess-bar span::after {
+            position: absolute;
+            content: "";
+            right: 0%;
+            top: -28px;
+            color: white;
+            background: black;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 1px 8px;
+            border-radius: 3%;
+        }
+        
+        .progess-bar.html span {
+            width: 95%;
+        }
+        
+        .skill-bar .progess-bar.css span {
+            width: 80%;
+        }
+        
+        .skill-bar .progess-bar.js span {
+            width: 70%;
+        }
+        
+        .skill-bar .progess-bar.php span {
+            width: 50%;
+        }
+        
+        .skill-bar .progess-bar.script span {
+            width: 96%;
+        }
+        
+        .progess-bar.html span::after {
+            content: "95%";
+        }
+        
+        .skill-bar .progess-bar.css span::after {
+            content: "80%";
+        }
+        
+        .skill-bar .progess-bar.js span::after {
+            content: "70%";
+        }
+        
+        .skill-bar .progess-bar.php span::after {
+            content: "50%";
+        }
+        
+        .skill-bar .progess-bar.script span::after {
+            content: "96%";
+        }
